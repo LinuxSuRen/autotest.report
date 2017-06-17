@@ -54,6 +54,21 @@ public class ExceptionRecord
 		this.throwable = throwable;
 	}
 
+	/**
+	 * @return 异常栈信息
+	 */
+	public String getStackTraceText()
+	{
+		if(throwable == null)
+		{
+			return "";
+		}
+
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		throwable.printStackTrace(new PrintStream(out));
+		return out.toString();
+	}
+
 	public NormalRecord getNormalRecord()
 	{
 		return normalRecord;
