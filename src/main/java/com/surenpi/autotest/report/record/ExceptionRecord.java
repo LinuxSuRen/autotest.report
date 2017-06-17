@@ -18,6 +18,9 @@
 
 package com.surenpi.autotest.report.record;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 /**
  * 异常信息记录
  * @author suren
