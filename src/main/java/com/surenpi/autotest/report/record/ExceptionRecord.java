@@ -19,7 +19,9 @@
 package com.surenpi.autotest.report.record;
 
 import java.io.ByteArrayOutputStream;
+import java.io.File;
 import java.io.PrintStream;
+import java.util.List;
 
 /**
  * 异常信息记录
@@ -30,6 +32,7 @@ public class ExceptionRecord
 {
 	private Throwable throwable;
 	private NormalRecord normalRecord;
+	private List<File> attachFileList;
 
 	public ExceptionRecord(Throwable throwable)
 	{
@@ -80,5 +83,21 @@ public class ExceptionRecord
 	public void setNormalRecord(NormalRecord normalRecord)
 	{
 		this.normalRecord = normalRecord;
+	}
+
+	/**
+	 * @return the attachFileList
+	 */
+	public List<File> getAttachFileList()
+	{
+		return attachFileList;
+	}
+
+	/**
+	 * @param attachFileList the attachFileList to set
+	 */
+	public void setAttachFileList(List<File> attachFileList)
+	{
+		this.attachFileList = attachFileList;
 	}
 }
