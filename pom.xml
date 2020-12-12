@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>autotest.report</artifactId>
-    <version>1.0.0-20170818</version>
+    <version>1.0.1-SNAPSHOT</version>
     
 	<build>
 		<plugins>
