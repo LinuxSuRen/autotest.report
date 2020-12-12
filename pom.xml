@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>autotest.report</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.1-SNAPSHOT</version>
     
 	<build>
 		<plugins>
@@ -31,9 +31,9 @@
 	</build>
 
 	<scm>
-		<connection>scm:git:git@github.com:LinuxSuRen/${project.artifactId}.git</connection>
-		<url>scm:git:git@github.com:LinuxSuRen/${project.artifactId}</url>
-		<developerConnection>scm:git:git@github.com:LinuxSuRen/${project.artifactId}.git</developerConnection>
-		<tag>v1.0.1</tag>
+		<connection>scm:git:https://github.com/LinuxSuRen/${project.artifactId}.git</connection>
+		<url>scm:git:https://github.com/LinuxSuRen/${project.artifactId}</url>
+		<developerConnection>scm:git:https://github.com/LinuxSuRen/${project.artifactId}.git</developerConnection>
+		<tag>${project.version}</tag>
 	</scm>
 </project>
