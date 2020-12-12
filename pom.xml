@@ -30,7 +30,10 @@
 		</plugins>
 	</build>
 
-  <scm>
-    <tag>v1.0.0-20170818</tag>
-  </scm>
+	<scm>
+		<connection>scm:git:https://github.com/LinuxSuRen/${project.artifactId}.git</connection>
+		<url>scm:git:https://github.com/LinuxSuRen/${project.artifactId}</url>
+		<developerConnection>scm:git:https://github.com/LinuxSuRen/${project.artifactId}.git</developerConnection>
+		<tag>${project.version}</tag>
+	</scm>
 </project>
