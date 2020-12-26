@@ -18,6 +18,9 @@
 
 package com.surenpi.autotest.report.record;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 正常记录
  * @author suren
@@ -31,6 +34,7 @@ public class NormalRecord extends Record
     private String clazzName;
     /** 产生记录所在的方法名称 */
     private String methodName;
+    private List<Action> actions = new ArrayList<>();
 
     public String getModuleName()
     {
@@ -70,5 +74,13 @@ public class NormalRecord extends Record
     public void setMethodName(String methodName)
     {
         this.methodName = methodName;
+    }
+
+    public List<Action> getActions() {
+        return actions;
+    }
+
+    public void setActions(List<Action> actions) {
+        this.actions = actions;
     }
 }

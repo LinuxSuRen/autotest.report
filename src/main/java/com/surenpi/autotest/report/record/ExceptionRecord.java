@@ -28,7 +28,7 @@ import java.util.List;
  * @author suren
  * @date 2016年9月6日 下午8:36:15
  */
-public class ExceptionRecord
+public class ExceptionRecord extends NormalRecord
 {
 	private Throwable throwable;
 	private NormalRecord normalRecord;
